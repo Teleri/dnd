@@ -1,14 +1,28 @@
-<div class="container">
-  <%= simple_form_for [@user, @character] do |f| %>
-    <%= f.input :name %>
-    <%= f.input :race %>
-    <%= f.input :character_class %>
-    <%= f.input :age %>
-    <%= f.input :height %>
-    <%= f.input :weight %>
-    <%= f.input :alignment %>
-    <%= f.input :background %>
-    <%= f.input :gender %>
-    <%= f.button :submit %>
-  <% end %>
-</div>
+  <div class="new-char-form">
+      <%= simple_form_for [@user, @character] do |f| %>
+        <%= f.input :name %>
+        <%= f.input :race, collection: ["Gnome", "Half-Elf", "Halfling", "Half-Orc", "Human", "Tiefling",
+          "Orc of Exandria", "Leonin", "Satyr", "Aarakocra", "Genasi", "Goliath", "Aasimar", "Bugbear", "Firbolg", 
+          "Goblin", "Hobgoblin", "Kenku", "Kobold", "Lizardfolk", "Orc", "Tabaxi", "Triton", "Yuan-ti Pureblood", 
+          "Feral Tiefling", "Tortle", "Changeling", "Kalashtar", "Orc of Eberron", "Shifter", "Warforged", 
+          "Gith", "Centaur", "Loxodon", "Minotaur", "Simic Hybrid", "Vedalken", "Verdan", "Locathah"],
+          prompt: "Select your race" %>
+        <%= f.input :character_class, collection: ["Barbarian", "Bard", "Cleric", "Druid", "Fighter",
+          "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard",
+          "Artificer", "Blood Hunter"], prompt: "Select your class" %>
+        <%= f.input :age %>
+        <%= f.input :height %>
+        <%= f.input :weight %>
+        <%= f.input :alignment, collection: ["Chaotic Evil", "Chaotic Good", "Chaotic Neutral",
+          "Lawful Evil", "Lawful Good", "Lawful Neutral", "Neutral", "Neutral Evil", "Neutral Good"],
+          prompt: "Select your alignment" %>
+        <%= f.input :background, collection: ["Acolyte", "Charlatan", "Criminal / Spy", "Entertainer",
+          "Folk Hero", "Gladiator", "Guild Artisan / Guild Merchant", "Haunted One", "Hermit", "Knight",
+          "Noble", "Outlander", "Pirate", "Sage", "Sailor", "Soldier", "Urchin"],
+          prompt: "Select your background" %>
+        <%= f.input :gender, collection: ["Female", "Male", "Transgender", "Two-Spirit", "Cisgender",
+          "Non-Binary", "Genderqueer", "Gender expression", "Gender fluid", "Gender neutral"],
+        prompt: "What gender?" %>
+        <%= f.button :submit, class: "btn btn-dark" %>
+      <% end %>
+  </div>
