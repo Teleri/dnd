@@ -1,0 +1,40 @@
+<div class="container">
+  <%= simple_form_for(@user) do |f| %>
+    <div class="form-inputs">
+      <%= f.input :username,
+      required: false,
+      autofocus: true,
+      label: false,
+      placeholder: 'username',
+      input_html: { autocomplete: "username", style: 'background-color:transparent', class: 'input2' } %>
+
+      <%= f.input :email, required: true, autofocus: true, label: false,
+      input_html: { autocomplete: "email", style: 'background-color:transparent', class: 'input2' },
+      placeholder: 'email' %>
+      <div class="password">
+        <%= f.input :password,
+                    hint: "leave it blank if you don't want to change it",
+                    required: false,
+                    label: false,
+                    input_html: {style: 'background-color:transparent', class: 'input2', autocomplete: "new-password" },
+                    placeholder: 'password'
+                    %>
+        <%= f.input :password_confirmation,
+                    required: false,
+                    label: false,
+                    input_html: {style: 'background-color:transparent', class: 'input2', autocomplete: "new-password" },
+                    placeholder: 'password confirmation' %>
+        <%= f.input :current_password,
+                    hint: "we need your current password to confirm your changes",
+                    required: true,
+                    label: false,
+                    input_html: {style: 'background-color:transparent', class: 'input2', autocomplete: "current-password" },
+                    placeholder: 'current password' %>
+      </div>
+    </div>
+    <div class="form-actions">
+      <%= f.button :submit, "Update", class: "c-account-home-button3" %>
+      <%= link_to "Cancel", user_path(@user) %>
+    </div>
+  <% end %>
+</div>

@@ -1,3 +1,7 @@
 <div class="container">
+  <%= @user.username %>
   <%= @user.email %>
+  <div class="links">
+    <%= link_to "Edit Profile", edit_user_path(@user) %>
+  </div>
 </div>
