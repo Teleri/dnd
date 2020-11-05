@@ -1,0 +1,43 @@
+.footer {
+  background: black;
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  padding: auto 0;
+}
+
+.footer li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.footer i {
+  color: white;
+  font-size: 40px;
+  &:hover {
+    color: #a5ffa2;
+  }
+}
+
+.footer a {
+  text-decoration: none;
+}
