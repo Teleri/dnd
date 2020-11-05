@@ -1,5 +1,5 @@
 class CharactersController < ApplicationController
-  before_action :find_user, only: %i[new create show edit update]
+  before_action :find_user, only: %i[index show new create edit update]
   before_action :find_character, only: %i[show edit update destroy]
 
   def index
