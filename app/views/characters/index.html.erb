@@ -1,6 +1,11 @@
 <div class="container">
+  <ul>
   <% @characters.each do |character| %>
-    <%= character.name %>
-    <%= character.race %>
+    <li>
+    <%= link_to user_character_path(@user, character) do %>
+      <%= character.name %>
+    <% end %>
+    </li>
   <% end %>
+  </ul>
 </div>

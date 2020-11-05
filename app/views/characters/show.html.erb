@@ -1,13 +1,16 @@
 <div class="container">
   <h3><%= @character.name %></h3>
   <ul>
-    <li><%= @character.race %></li>
-    <li><%= @character.character_class %></li>
-    <li><%= @character.age %></li>
-    <li><%= @character.height %></li>
-    <li><%= @character.weight %></li>
-    <li><%= @character.alignment %></li>
-    <li><%= @character.background %></li>
-    <li><%= @character.gender %></li>
+    <li>Race: <%= @character.race %></li>
+    <li>Class: <%= @character.character_class %></li>
+    <li>Age: <%= @character.age %></li>
+    <li>Height: <%= @character.height %></li>
+    <li>Weight: <%= @character.weight %></li>
+    <li>Alignment: <%= @character.alignment %></li>
+    <li>Background: <%= @character.background %></li>
+    <li>Gender: <%= @character.gender %></li>
   </ul>
+  <div class="links">
+    <%= link_to "Back to index", user_characters_path %>
+  </div>
 </div>
