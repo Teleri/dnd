@@ -1,0 +1,14 @@
+<div class="container">
+  <%= simple_form_for [@user, @character] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :race %>
+    <%= f.input :character_class %>
+    <%= f.input :age %>
+    <%= f.input :height %>
+    <%= f.input :weight %>
+    <%= f.input :alignment %>
+    <%= f.input :background %>
+    <%= f.input :gender %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
