@@ -1,6 +1,9 @@
 <div class="container">
-  <%= @user.username %>
-  <%= @user.email %>
+  Username: <%= @user.username %>
+  <br>
+  Email: <%= @user.email %>
+  <br>
+  <br>
   <div class="links">
     <%= link_to "Edit Profile", edit_user_path(@user) %>
   </div>
