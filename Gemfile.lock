@@ -60,7 +60,11 @@ GEM
       execjs
     bcrypt (3.1.16)
     bindex (0.8.1)
+<<<<<<< HEAD
     bootsnap (1.7.2)
+=======
+    bootsnap (1.7.0)
+>>>>>>> b5469e95560b6540019b5b69128f988e2a64c6bc
       msgpack (~> 1.0)
     bootstrap (4.6.0)
       autoprefixer-rails (>= 9.1.0)
@@ -83,7 +87,11 @@ GEM
       sassc (>= 1.11)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+<<<<<<< HEAD
     i18n (1.8.9)
+=======
+    i18n (1.8.8)
+>>>>>>> b5469e95560b6540019b5b69128f988e2a64c6bc
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
@@ -104,9 +112,15 @@ GEM
     method_source (1.0.0)
     mimemagic (0.3.5)
     mini_mime (1.0.2)
+<<<<<<< HEAD
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.5)
+=======
+    minitest (5.14.3)
+    msgpack (1.4.2)
+    nio4r (2.5.4)
+>>>>>>> b5469e95560b6540019b5b69128f988e2a64c6bc
     nokogiri (1.11.1-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -229,4 +243,8 @@ RUBY VERSION
    ruby 2.6.6p146
 
 BUNDLED WITH
+<<<<<<< HEAD
    2.2.6
+=======
+   2.2.4
+>>>>>>> b5469e95560b6540019b5b69128f988e2a64c6bc
